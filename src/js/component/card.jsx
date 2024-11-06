@@ -41,9 +41,9 @@ const cards = [
 
 export const BootstrapCard = () => {
   return (
-    <div className="card-deck">
+    <div className="container card-deck">
       {cards.map((obj, index) => (
-        <div key={index} className="card" style={{ width: "18rem" }}>
+        <div key={index} className="card" style={{ width: "22rem" }}>
           <img src={obj.imageUrl} className="card-img-top" alt={obj.title} />
           <div className="card-body">
             <h5 className="card-title">{obj.title}</h5>
