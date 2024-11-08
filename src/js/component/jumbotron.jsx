@@ -1,21 +1,21 @@
 import React from "react";
-import AngelImage from "/workspaces/jjmorenosound-react-landing-page/src/img/angeluscard.jpg"; 
+import BuffyBanner from "/workspaces/jjmorenosound-react-landing-page/src/img/buffybanner.jpg"; 
 
 const jumbo = {
-  imageUrl: AngelImage,
-  title: "Angel",
-  description: "The baddest vampire if soulless",
-  buttonUrl: "https://www.youtube.com/watch?v=vpAol_17mO0&pp=ygULYW5nZWwgaW50cm8%3D",
+  imageUrl: BuffyBanner,
+  title: "Buffy the Vampire Slayer",
+  description: "This the greatest show of all time. More than the Wire, the Sopranos and Breaking Bad. Come at me bros",
+  buttonUrl: "https://www.youtube.com/@buffythevampireslayerstar",
   buttonLabel: "Check it"
 };
 
 export const JumboTron = () => {
   return (
-    <div className="card text-bg-dark">
+    <div className="jumbotron-container card text-bg-dark">
       <img src={jumbo.imageUrl} className="card-img" alt="..." />
-      <div className="card-img-overlay">
-        <h5 className="card-title">{jumbo.title}</h5>
-        <p className="card-text">{jumbo.description}</p>
+      <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+        <h5 className="jumbotron-title text-center">{jumbo.title}</h5>
+        <p className="jumbotron-text text-center">{jumbo.description}</p>
         <a href={jumbo.buttonUrl} className="btn btn-primary">{jumbo.buttonLabel}</a>
       </div>
     </div>

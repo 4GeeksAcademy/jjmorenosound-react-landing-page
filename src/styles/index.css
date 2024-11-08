@@ -1,3 +1,33 @@
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
 .card-deck {
     display: flex;
+    
+}
+
+.card-img {
+        object-fit:cover; 
+        object-position: 0 15%;
+        height: 500px; 
+        
+}
+.jumbotron-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.jumbotron-title {
+    font-size: 70px;
+    
+}
+
+
+footer {
+    height: 200px;
+   color: white;
 }

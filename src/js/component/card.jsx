@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PropTypes from "prop-types"; 
 import AngelImage from "../../img/angeluscard.jpg";
-import BuffyImage from "../../img/buffycard.jpg";
+import BuffyImage from "/workspaces/jjmorenosound-react-landing-page/src/img/buffysummers.jpg";
 import SpikeImage from "../../img/spikecard.jpg";
 import WillowImage from "../../img/willowbadcard.jpg";
 
@@ -42,7 +41,7 @@ const cards = [
 export const BootstrapCard = () => {
   return (
     <div className="container my-5">
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
         {cards.map((obj, index) => (
           <div key={index} className="col">
             <div className="card h-100">
@@ -63,10 +62,3 @@ export const BootstrapCard = () => {
 };
 
 
-BootstrapCard.propTypes = {
-  title: PropTypes.string,
-  imageUrl: PropTypes.string,
-  description: PropTypes.string,
-  buttonUrl: PropTypes.string,
-  buttonLabel: PropTypes.string
-};

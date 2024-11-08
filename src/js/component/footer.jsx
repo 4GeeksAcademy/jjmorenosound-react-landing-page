@@ -2,6 +2,6 @@ import React from "react";
 
 export const FooterContent = () => {
     return (
-        <footer>copyright @benitogalarga 2024</footer>
+        <footer className="align-content-center bg-dark border-bottom border-body" data-bs-theme="dark"><p className="text-center">Copyright @Giorgie learning React 2024</p></footer>
     )
 }

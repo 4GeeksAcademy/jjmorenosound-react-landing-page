@@ -2,15 +2,15 @@ import React from "react";
 
 
 const navbarContent = {
-    siteUrl: "https://githubuniverse.com/?utm_source=github&utm_medium=banner&utm_campaign=24banner16li",
+    siteUrl: "",
     siteLabel: "Buffy",
-    homeUrl: "https://githubuniverse.com/?utm_source=github&utm_medium=banner&utm_campaign=24banner16li",
+    homeUrl: "",
     homeLabel: "home",
-    aboutUrl: "https://githubuniverse.com/?utm_source=github&utm_medium=banner&utm_campaign=24banner16li",
+    aboutUrl: "https://buffy.fandom.com/wiki/Buffy_the_Vampire_Slayer_and_Angel",
     aboutLabel: "about",
-    servicesUrl: "https://githubuniverse.com/?utm_source=github&utm_medium=banner&utm_campaign=24banner16li",
+    servicesUrl: "https://buffy.fandom.com/wiki/Buffy_Summers",
     servicesLabel: "services",
-    contactUrl: "https://githubuniverse.com/?utm_source=github&utm_medium=banner&utm_campaign=24banner16li",
+    contactUrl: "https://buffy.fandom.com/wiki/Rupert_Giles",
     contactLabel: "contact"
 
 }
@@ -20,7 +20,7 @@ export const NavBar = () => {
     return (
       <nav className="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href={navbarContent.siteUrl}>
+          <a className="navbar-brand" href="#" onClick="window.location.reload()">
             {navbarContent.siteLabel}
           </a>
           <button
@@ -31,13 +31,14 @@ export const NavBar = () => {
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            
           >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href={navbarContent.homeUrl}>
+                <a className="nav-link active" aria-current="page" href="#" onClick="window.location.reload()">
                   {navbarContent.homeLabel}
                 </a>
               </li>
