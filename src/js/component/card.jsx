@@ -32,7 +32,7 @@ const cards = [
   {
     imageUrl: WillowImage,
     title: "Willow",
-    description: "The big bad witch",  // Corrected "which" to "witch"
+    description: "The big bad witch", 
     buttonUrl: "https://www.youtube.com/watch?v=FWvpx7l-Fa8&pp=ygUMd2lsbG93IGJ1ZmZ5",
     buttonLabel: "Check it"
   }
@@ -41,19 +41,23 @@ const cards = [
 
 export const BootstrapCard = () => {
   return (
-    <div className="container card-deck">
-      {cards.map((obj, index) => (
-        <div key={index} className="card" style={{ width: "22rem" }}>
-          <img src={obj.imageUrl} className="card-img-top" alt={obj.title} />
-          <div className="card-body">
-            <h5 className="card-title">{obj.title}</h5>
-            <p className="card-text">{obj.description}</p>
-            <a href={obj.buttonUrl} className="btn btn-primary">
-              {obj.buttonLabel}
-            </a>
+    <div className="container my-5">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        {cards.map((obj, index) => (
+          <div key={index} className="col">
+            <div className="card h-100">
+              <img src={obj.imageUrl} className="card-img-top" alt={obj.title} />
+              <div className="card-body">
+                <h5 className="card-title">{obj.title}</h5>
+                <p className="card-text">{obj.description}</p>
+                <a href={obj.buttonUrl} className="btn btn-primary">
+                  {obj.buttonLabel}
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
